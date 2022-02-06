@@ -1,12 +1,6 @@
 import java.util.Enumeration;
 
 public class TextStatement extends Statement {
-   public String value(Customer aCustomer) {
-      String result = announce(aCustomer); //1
-      result = rentalListing(aCustomer, result); //2
-      result = footerLines(aCustomer, result); //3
-      return result;
-  }
 
   public String announce(Customer aCustomer) {
     return "Rental Record for " + aCustomer.getName() + "\n";
